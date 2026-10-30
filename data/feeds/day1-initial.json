@@ -1,0 +1,36 @@
+{
+  "supplier": "Harbor & Pine Supply Co. (fictional)",
+  "description": "Initial catalog delivery in 4 batches. Deliberately contains repeated records, out-of-order versions, a withdrawal that arrives BEFORE an older upsert, invalid records and one version conflict.",
+  "batches": [
+    [
+      {"event_id":"d1-001","sku":"HP-1001","type":"upsert","version":1,"name":"Walnut Desk Organizer","description":"Three-compartment organizer in solid walnut.","category":"Desk","price_cents":3499,"currency":"USD"},
+      {"event_id":"d1-002","sku":"HP-1002","type":"upsert","version":1,"name":"Ceramic Pour-Over Set","description":"Dripper and carafe, matte glaze.","category":"Kitchen","price_cents":4200,"currency":"USD"},
+      {"event_id":"d1-003","sku":"HP-1003","type":"upsert","version":1,"name":"Linen Apron","description":"Stonewashed linen with two front pockets.","category":"Kitchen","price_cents":2800,"currency":"USD"},
+      {"event_id":"d1-004","sku":"HP-1004","type":"upsert","version":1,"name":"Brass Letter Opener","description":"Hand-finished solid brass.","category":"Desk","price_cents":1599,"currency":"USD"},
+      {"event_id":"d1-005","sku":"HP-1005","type":"upsert","version":1,"name":"Canvas Tote Bag","description":"Heavy waxed canvas, leather handles.","category":"Bags","price_cents":2200,"currency":"USD"}
+    ],
+    [
+      {"event_id":"d1-006","sku":"HP-1006","type":"upsert","version":1,"name":"Enamel Camp Mug","description":"350 ml enamel mug.","category":"Kitchen","price_cents":1299,"currency":"USD"},
+      {"event_id":"d1-007","sku":"HP-1002","type":"upsert","version":1,"name":"Ceramic Pour-Over Set","description":"Dripper and carafe, matte glaze.","category":"Kitchen","price_cents":4200,"currency":"USD"},
+      {"event_id":"d1-008","sku":"HP-1007","type":"upsert","version":2,"name":"Cast Iron Trivet","description":"Pre-seasoned, with silicone feet.","category":"Kitchen","price_cents":2400,"currency":"USD"},
+      {"event_id":"d1-009","sku":"HP-1003","type":"upsert","version":2,"name":"Linen Apron","description":"Stonewashed linen with two front pockets.","category":"Kitchen","price_cents":3000,"currency":"USD"},
+      {"event_id":"d1-010","sku":"HP-1008","type":"withdraw","version":3}
+    ],
+    [
+      {"event_id":"d1-011","sku":"HP-1008","type":"upsert","version":2,"name":"Bamboo Cutting Board","description":"Large end-grain board.","category":"Kitchen","price_cents":2600,"currency":"USD"},
+      {"event_id":"d1-012","sku":"HP-1009","type":"upsert","version":1,"description":"Record is missing its name.","category":"Desk","price_cents":1850,"currency":"USD"},
+      {"event_id":"d1-013","sku":"HP-1010","type":"upsert","version":1,"name":"Pine Bookends","description":"Negative price by mistake.","category":"Desk","price_cents":-500,"currency":"USD"},
+      {"event_id":"d1-014","sku":"  hp-1011 ","type":"upsert","version":1,"name":"Wool Throw Blanket","description":"SKU arrives lower-case with spaces; it is normalised.","category":"Home","price_cents":6900,"currency":"USD"},
+      {"event_id":"d1-015","sku":"HP-1012","type":"upsert","version":1,"name":"Salt Cellar","description":"Price sent as text instead of a number.","category":"Kitchen","price_cents":"12.99","currency":"USD"},
+      {"event_id":"d1-016","sku":"HP-1004","type":"withdraw","version":2},
+      {"event_id":"d1-017","type":"upsert","version":1,"name":"Mystery Item","description":"No SKU at all.","category":"Misc","price_cents":999,"currency":"USD"}
+    ],
+    [
+      {"event_id":"d1-018","sku":"HP-1007","type":"upsert","version":1,"name":"Cast Iron Trivet","description":"Older revision that arrives late.","category":"Kitchen","price_cents":2300,"currency":"USD"},
+      {"event_id":"d1-019","sku":"HP-1005","type":"upsert","version":1,"name":"Canvas Tote Bag","description":"Heavy waxed canvas, leather handles.","category":"Bags","price_cents":2400,"currency":"USD"},
+      {"event_id":"d1-020","sku":"HP-1013","type":"upsert","version":1,"name":"Slate Coasters (Set of 4)","description":"Natural slate with cork backing.","category":"Kitchen","price_cents":1899,"currency":"USD"},
+      {"event_id":"d1-021","sku":"HP-1001","type":"upsert","version":1,"name":"Walnut Desk Organizer","description":"Three-compartment organizer in solid walnut.","category":"Desk","price_cents":3499,"currency":"USD"},
+      {"event_id":"d1-022","sku":"HP-1014","type":"upsert","version":1,"name":"Beeswax Candle","description":"Hand-poured, 40 hour burn.","category":"Home","price_cents":1450,"currency":"USD"}
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+# Binaries
+/bin/
+/server
+/fakesupplier
+*.exe
+
+# Local databases (the demo creates these)
+*.db
+*.db-wal
+*.db-shm
+/tmp/
+
+# Go tooling
+*.test
+*.out
+coverage.html
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store

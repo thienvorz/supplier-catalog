@@ -1,0 +1,24 @@
+{
+  "supplier": "Harbor & Pine Supply Co. (fictional)",
+  "description": "Follow-up delivery in 3 batches: price changes, new products, a withdrawal, a relisting by a newer version, stale replays of old information, a repeat and one invalid record.",
+  "batches": [
+    [
+      {"event_id":"d2-001","sku":"HP-1001","type":"upsert","version":2,"name":"Walnut Desk Organizer","description":"Three-compartment organizer in solid walnut.","category":"Desk","price_cents":3699,"currency":"USD"},
+      {"event_id":"d2-002","sku":"HP-1002","type":"upsert","version":2,"name":"Ceramic Pour-Over Set","description":"Dripper and carafe, matte glaze.","category":"Kitchen","price_cents":4200,"currency":"USD"},
+      {"event_id":"d2-003","sku":"HP-1015","type":"upsert","version":1,"name":"Oak Serving Tray","description":"Rectangular tray with brass handles.","category":"Kitchen","price_cents":5400,"currency":"USD"},
+      {"event_id":"d2-004","sku":"HP-1004","type":"upsert","version":1,"name":"Brass Letter Opener","description":"Hand-finished solid brass.","category":"Desk","price_cents":1599,"currency":"USD"}
+    ],
+    [
+      {"event_id":"d2-005","sku":"HP-1008","type":"upsert","version":4,"name":"Bamboo Cutting Board","description":"Large end-grain board, back in stock.","category":"Kitchen","price_cents":2600,"currency":"USD"},
+      {"event_id":"d2-006","sku":"HP-1006","type":"withdraw","version":2},
+      {"event_id":"d2-007","sku":"HP-1003","type":"upsert","version":2,"name":"Linen Apron","description":"Stonewashed linen with two front pockets.","category":"Kitchen","price_cents":3000,"currency":"USD"},
+      {"event_id":"d2-008","sku":"HP-1016","type":"upsert","version":1,"name":"Glass Storage Jar","description":"1 litre jar with bamboo lid.","category":"Kitchen","price_cents":1750,"currency":"USD"}
+    ],
+    [
+      {"event_id":"d2-009","sku":"HP-1006","type":"upsert","version":1,"name":"Enamel Camp Mug","description":"350 ml enamel mug.","category":"Kitchen","price_cents":1299,"currency":"USD"},
+      {"event_id":"d2-010","sku":"HP-1007","type":"upsert","version":3,"name":"Cast Iron Trivet","description":"Pre-seasoned, with silicone feet.","category":"Kitchen","price_cents":2500,"currency":"USD"},
+      {"event_id":"d2-011","sku":"HP-1017","type":"upsert","version":1,"name":"Felt Desk Mat","description":"Currency is not a valid code.","category":"Desk","price_cents":3100,"currency":"DOLLARS"},
+      {"event_id":"d2-012","sku":"HP-1001","type":"upsert","version":2,"name":"Walnut Desk Organizer","description":"Three-compartment organizer in solid walnut.","category":"Desk","price_cents":3699,"currency":"USD"}
+    ]
+  ]
+}
